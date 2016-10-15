@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apple="http://schemas.android.com/apk/res/com.tarena.weather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新时间：09:00" 
+        android:padding="16dp"
+        />
+
+   <!--  <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launch" /> -->
+    <com.natasa.progressviews.CircleSegmentBar
+        android:id="@+id/circleSegmentBar"
+        android:layout_width="240dp"
+        android:layout_height="240dp" 
+        apple:bar_width="10dp"
+        apple:progress_color="#f77630"
+        apple:progress_width="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="星期一" />
+
+    <TextView
+        android:id="@+id/tv_quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="晴|空气质量：量" />
+	
+</LinearLayout>
